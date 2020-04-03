@@ -1,0 +1,316 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+.yudimy-logo {
+  padding: 1rem;
+  width: 8rem;
+}
+.index-header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-hr {
+  border-top: 1px solid #e62c91;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  max-width: 250px;
+  position: relative;
+  margin: 50px 30rem 0;
+  font-size: 15px;
+}
+
+.name-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0px;
+  padding: 1rem 0.5rem 1rem;
+}
+.name-input:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-position: 0% 0%;
+  background: linear-gradient(to right, #292929,#2a2e2e);
+  background-size: 500% auto;
+  animation: gradient 3s linear infinite;
+}
+.name-input input {
+  flex-grow: 1;
+  color: #000000;
+  font-size: 1em;
+  vertical-align: middle;
+  border: none;
+}
+.name-input input::-webkit-input-placeholder {
+  color: #7881a1;
+}
+
+.label-div{
+  margin-bottom: 2em;
+}
+.radiobtn {
+  position: relative;
+  display: block;
+}
+.radiobtn label {
+  display: block;
+  background: #015e75;
+  color: rgb(250, 249, 249);
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 2px solid #b4145e;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding-left: 5em;
+}
+.radiobtn label:after, .radiobtn label:before {
+  content: "";
+  position: absolute;
+  right: 201px;
+  top: 11px;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: #ffffff;
+}
+.radiobtn label:before {
+  background: transparent;
+  transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+  z-index: 2;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: center;
+  width: 0;
+  height: 0;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNiAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTIuNTI4OCIgY3k9IjEzLjExMTMiIHI9IjEyLjUiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=);
+}
+.radiobtn input[type="radio"] {
+  display: none;
+  position: absolute;
+  width: 100%;
+  appearance: none;
+}
+.radiobtn input[type="radio"]:checked + label {
+  background: #cc2965;
+  animation-name: blink;
+  animation-duration: 1s;
+  border-color: #b4154e;
+}
+.radiobtn input[type="radio"]:checked + label:after {
+  background: #cc2965;
+}
+.radiobtn input[type="radio"]:checked + label:before {
+  width: 20px;
+  height: 20px;
+}
+
+.checkboxbtn {
+  position: relative;
+  display: block;
+}
+.checkboxbtn label {
+  display: block;
+  background: #015e75;
+  color: rgb(250, 249, 249);
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 2px solid #b4145e;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding-left: 5em;
+}
+.checkboxbtn label:after, .checkboxbtn label:before {
+  content: "";
+  position: absolute;
+  right: 201px;
+  top: 11px;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: #ffffff;
+}
+.checkboxbtn label:before {
+  background: transparent;
+  transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+  z-index: 2;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: center;
+  width: 0;
+  height: 0;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNiAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTIuNTI4OCIgY3k9IjEzLjExMTMiIHI9IjEyLjUiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=);
+}
+.checkboxbtn input[type="checkbox"] {
+  display: none;
+  position: absolute;
+  width: 100%;
+  appearance: none;
+}
+.checkboxbtn input[type="checkbox"]:checked + label {
+  background: #cc2965;
+  animation-name: blink;
+  animation-duration: 1s;
+  border-color: #b4154e;
+}
+.checkboxbtn input[type="checkbox"]:checked + label:after {
+  background: #cc2965;
+}
+.checkboxbtn input[type="checkbox"]:checked + label:before {
+  width: 20px;
+  height: 20px;
+}
+@keyframes blink {
+  0% {
+    background-color: #cc4677;
+ }
+  10% {
+    background-color: #cc4677;
+ }
+  11% {
+    background-color: #cc4677;
+ }
+  29% {
+    background-color: #cc4677;
+ }
+  30% {
+    background-color: #cc4677;
+ }
+  50% {
+    background-color: #cc4677;
+ }
+  45% {
+    background-color: #cc4677;
+ }
+  50% {
+    background-color: #cc4677;
+ }
+  100% {
+    background-color: #cc4677;
+ }
+}
+.questions {
+  padding-bottom: 3rem;
+}
+
+.footer-main {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-3, .col-md-6, .col-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+i {
+  font-size: 1em;
+  display: flex;
+  padding-right: 1.6em;
+  color: #262625;
+}
+.social-list {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+.btn {
+  position: relative;
+  width: 100%;
+  letter-spacing: .5px;
+  margin-right: -0.5px;
+  color: #ffffff;
+}
+button.btn {
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-left: 0em;
+  padding-right: 0em;
+  margin-top: 3em;
+}
+.btn-submit {
+  background: #b4154e;
+  border-color: #b4154e;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .col-md-6 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .col-lg-3 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

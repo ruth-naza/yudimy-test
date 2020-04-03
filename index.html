@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">  
+  <link href="./css/index.css" rel="stylesheet" type="text/css" media="all">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Sample Analysis</title>
+</head>
+<body>
+  <img class="yudimy-logo" src="./img/yudimy-logo.png">
+  <hr>
+  <div >
+    <h1 class="index-header">Simple Analysis Form</h1>
+    <hr class="header-hr">
+  </div>
+  <form id="sample-form" action="" onsubmit="return false;">
+    <div class="questions">
+      <div class="label-div">
+        <label for="name"> What's your name?</label>
+      </div>
+      <div class="name-input">
+        <input id="name" name="name" type="text" placeholder="Type your answer here..."></input>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="label-div">
+        <label for="q2"> Which do you prefer the most?</label>
+      </div>
+      <div class="radiobtn">
+        <input type="radio" id="burger"
+              name="q2" value="burger" checked />
+        <label for="burger">Burger</label>
+      </div>
+    
+      <div class="radiobtn">
+        <input type="radio" id="dewey"
+              name="q2" value="dewey" />
+        <label for="dewey">Dewey</label>
+      </div>
+    
+      <div class="radiobtn">
+        <input type="radio" id="louie"
+              name="q2" value="louie" />
+        <label for="louie">Louie</label>
+      </div>
+    </div>
+    <div class="">
+      <div class="label-div">
+        <label for="q3"> Which do you prefer the most?</label>
+      </div>
+      <div class="checkboxbtn">
+        <input type="checkbox" id="hello"
+              name="q3" value="hello" checked />
+        <label for="hello">hello</label>
+      </div>
+    
+      <div class="checkboxbtn">
+        <input type="checkbox" id="hi"
+              name="q3" value="hi" />
+        <label for="hi">hi</label>
+      </div>
+    
+      <div class="checkboxbtn">
+        <input type="checkbox" id="what"
+              name="q3" value="what" />
+        <label for="what">what</label>
+      </div>
+    </div>
+    <button id="btn-submit" type="submit" class="btn btn-submit">Submit</button>
+  </form>
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-6">
+          <ul class="social-list">
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 col-6">
+          <h6 class="footer-heading"> Company</h6>
+            <ul class="footer-list">
+              <li> 
+                <a>About Us</a>
+              </li>
+              <li> 
+                <a>
+                  Terms and Conditions
+              </a>
+            </li>
+            <li>
+              <a>
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 col-6">
+          <h6 class="footer-heading">Services</h6>
+            <ul class="footer-list">
+              <li> 
+                <a>
+                  Clarity by Yudimy Services
+              </a>
+            </li>
+            <li>
+              <a>
+                Clarity For Teams
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 col-6">
+          <h6 class="footer-heading"> Connect</h6>
+            <ul class="footer-list">
+              <li> 
+                <a>Contact Us</a>
+              </li>
+              <li> 
+                <a>
+                  FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
