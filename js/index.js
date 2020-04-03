@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  let btnSubmit = document.getElementById('btn-submit');
-  btnSubmit.addEventListener('click', function(){
+  let btnSubmit = document.getElementById("btn-submit");
+  btnSubmit.addEventListener("click", function() {
     let nameValue = document.getElementById("name").value;
-    let form = document.getElementById('sample-form');
+    let form = document.getElementById("sample-form");
     let q2value = form["q2"].value;
     let q3Inputs = form["q3"];
     let q3Array = [];
@@ -21,19 +21,26 @@ $(document).ready(function() {
       q3: q3Value
     };
 
-    console.log('data', data);
-
     const options = {
-      method: 'POST',
-      mode: 'no-cors', 
+      method: "POST",
+      mode: "no-cors",
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
-    }
-    console.log(options.body);
-    fetch('https://sample-recruit.herokuapp.com/submit', options).then(resp=>{
-      console.log(resp.json())
-    })
+    };
+
+    fetch("https://sample-recruit.herokuapp.com/submit", options)
+      .then(response => {
+        console.log('response', response);
+        return response.json();
+      })
+      .then(result => {
+        // console.log('result', result);
+        console.log(JSON.stringify(result, null, 2));
+      })
+      .catch(error => {
+        console.log("Error: " + error.message);
+      });
   });
 });
